@@ -10,7 +10,11 @@
     <body>
         @include('_partials.nav')
 
-        @include('_partials.header')        
+        @include('_partials.header')     
+        
+        <div class="container">
+            <h3>Blog listing</h3>
+        </div>
  
         @yield('content')
     

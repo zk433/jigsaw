@@ -1,5 +1,10 @@
 @extends('_layouts.master')
 
-@section('body')
-<h1>Hello world!</h1>
+@section('content')
+
+<div class="container">
+    <h2>Hello!</h2>
+    <p>Write me an <a href="mailto:{{ $page->contact_email }}">email</a></p>
+</div>
+
 @endsection
