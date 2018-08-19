@@ -3,9 +3,10 @@
 return [
     'baseUrl' => '',
     'production' => false,
-    'collections' => [],
     'contact_email' => 'admin@zuzana-k.com',
+    'author'    =>  'Zuzana K',
     'collections' => [
-        'posts',
-    ]
+        'blog',
+        'sort' => ['date'],
+    ],
 ];

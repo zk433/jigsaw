@@ -1,0 +1,9 @@
+---
+extends: _layouts.post
+title: 'Stop Positive Thinking'
+created_at: 2018-08-19
+abstract: This post is about positive thinking
+tags: tag1, tag2
+---
+
+positivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinkingpositivethinking
