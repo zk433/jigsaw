@@ -1,9 +1,7 @@
 @include('_partials.meta')
     <body>
-        @include('_partials.nav')
-
-        @include('_partials.header')        
- 
+        @include('_partials.sidebar')
+            
         @yield('content')
     
         @include('_partials.footer')

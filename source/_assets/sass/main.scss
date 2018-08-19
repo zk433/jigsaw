@@ -1,0 +1,343 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ============================== LEFT SIDEBAR ================================  */
+button.close-button {
+    color: #F7659B;
+    font-size: 3.2rem;
+    top: -10px;
+    left: 10px;;
+}
+
+button.close-button:focus, button.close-button:hover {
+    color: #f7659b;
+}
+
+.off-canvas.position-left {
+    background-color: #1A1A1A;
+    width: 350px;
+    padding: 10px;
+    border-top: 3px solid #F7659B;
+    text-align: center;
+}
+
+.headshot {
+    height: 200px;
+    margin: 20px auto 30px;
+    display: block;
+}
+
+.off-canvas.position-left p {
+    line-height: 1.8;
+    color: #fbf7f5;
+    margin: 20px 0;
+}
+.off-canvas.position-left span a {
+    color: #fbf7f5;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: underline;
+}
+
+.off-canvas.position-left li {
+    margin: 7px 0;
+}
+
+.off-canvas.position-left ul {
+    margin: 20px 0;
+}
+
+.off-canvas.position-left a {
+    color: #F7659B;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.1;
+    position: relative;
+    padding: 0;
+    padding-bottom: 2px;
+}
+
+.off-canvas.position-left a:before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    margin-left: 104px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F7659B;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.off-canvas.position-left a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+hr {
+    width: 70%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+@media print, screen and (min-width: 64em) {
+    .off-canvas-content.has-reveal-left {
+        margin-left: 350px; 
+    }
+    .position-left.reveal-for-large ~ .off-canvas-content {
+        margin-left: 350px; 
+    }
+}
+
+/* ================================= CALLOUT =================================  */
+.callout.primary {
+    color: grey;
+    background-color: white;
+    height: 150px;
+    border: none;
+    margin: 2rem 0;
+    font-family: serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.callout.primary h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+.callout.primary h2 {
+    margin-bottom: 3.75rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.callout.primary hr {
+    width: 100%;
+}
+
+/* =============================== PORTFOLIO SECTION ========================== */
+
+#portfolio {
+    padding: 2rem 1rem;
+}
+
+#portfolio div.blurb {
+    max-width: 100%;
+    margin: 0 auto 60px;
+}
+
+#portfolio div.blurb p{
+    line-height: 1.8;
+}
+
+.cell {
+    margin-bottom: 30px;
+}
+
+img.thumbnail {
+    margin-bottom: 0;
+}
+
+.tile {
+    background-color: #181818;
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.tile * {
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.tile:after {
+    background-color: #F7659B;
+    bottom: 0;
+    content: '';
+    height: 0%;
+    right: 0;
+    position: absolute;
+    width: 7px;
+    -webkit-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+}
+
+.tile img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+.tile figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1em;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.tile h4 a, .tile h5 a {
+    border: 2px solid #f7659b;
+    background-color: rgba(247, 101, 155, .7);
+    border-radius: 2px;
+    width: 180px;
+    height: 45px;
+    margin: 0 auto;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    color: white;
+    padding-top: 9px;
+    padding-bottom: 5px;
+}
+
+.tile h4 a {
+    top: 32%;
+}
+
+.tile h5 a {
+    top: 55%;
+}
+
+.tile h4 a:hover, .tile h5 a:hover {
+    background-color: rgba(247, 101, 155, 1);
+}
+
+
+.tile:hover > img,
+.tile.hover > img {
+  opacity: 0.1;
+}
+
+.tile:hover:after,
+.tile.hover:after {
+  height: 100%;
+}
+
+.tile:hover figcaption,
+.tile.hover figcaption {
+  opacity: 1;
+}
+
+
+@media print, screen and (min-width: 64em) {
+    .callout.primary {
+        color: grey;
+        background-color: white;
+        height: 150px;
+        border: none;
+        margin: 4rem 0;
+        font-family: serif;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .callout.primary h2 {
+        font-size: 30px;
+        margin-bottom: 3.75rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #portfolio {
+        padding: 2rem;
+    }
+
+    #portfolio div.blurb {
+        max-width: 70%;
+        margin: 0 auto 60px;
+    }
+    .tile h4 a, .tile h5 a {
+        border: 2px solid #f7659b;
+        background-color: rgba(247, 101, 155, .7);
+        border-radius: 2px;
+        width: 160px;
+        height: 40px;
+        margin: 0 auto;
+        font-size: 16px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        color: white;
+        padding-top: 7px;
+        padding-bottom: 5px;
+    }
+    
+    .tile h4 a {
+        top: 34%;
+    }
+    
+    .tile h5 a {
+        top: 56%;
+    }
+}
+
+/* =================================== CONTACT SECTION =========================*/
+
+#contact {
+    padding-top: 1.3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#contact p:first-child {
+    margin-top: 20px;
+}
+
+
+#contact input.button {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1;
+    background-color: rgba(247, 101, 155, .8);
+    border-radius: 2px;
+    width: 40%;
+    height: 40px;
+    margin: 0 auto;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+
+#contact input.button:hover {
+    background-color: rgba(247, 101, 155, 1);
+}
+
+@media print, screen and (min-width: 64em) {
+    #contact {
+        padding: 3rem;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+/* ==============================FOOTER =========================== */
