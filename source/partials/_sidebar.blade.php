@@ -15,7 +15,7 @@
             </p>
             <hr>
 
-            @include('_partials.nav')
+            @include('partials._nav')
 
             <hr>
         </div>    

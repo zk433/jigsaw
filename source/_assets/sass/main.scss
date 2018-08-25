@@ -10,6 +10,10 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.hidden {
+    display: none;
+}
+
 /* ============================== LEFT SIDEBAR ================================  */
 button.close-button {
     color: #F7659B;
@@ -69,8 +73,8 @@ button.close-button:focus, button.close-button:hover {
 .off-canvas.position-left a:before {
     content: "";
     position: absolute;
-    width: 30%;
-    margin-left: 104px;
+    width: 33%;
+    margin-left: 99px;
     height: 2px;
     bottom: 0;
     left: 0;
@@ -341,3 +345,6 @@ img.thumbnail {
 }
 
 /* ==============================FOOTER =========================== */
+footer {
+    text-align: center;
+}

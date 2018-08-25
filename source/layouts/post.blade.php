@@ -1,8 +1,8 @@
-@include('_partials.meta')
+@include('partials._meta')
     <body>
-        @include('_partials.nav')
+        @include('partials._nav')
 
-        @include('_partials.header')     
+        @include('partials._header')     
         
         <div class="container">
             <h2>Blog listing</h2>
@@ -10,7 +10,7 @@
  
         @yield('content')
     
-        @include('_partials.footer')
+        @include('partials._footer')
     
     </body>
 </html>

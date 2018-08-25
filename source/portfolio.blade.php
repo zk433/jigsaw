@@ -1,16 +1,8 @@
-@extends('_layouts.master')
+@extends('layouts.master')
 
 @section('content')
       
-        <div class="callout primary">
-          <article class="grid-container">
-            <div class="">
-              <h1 class="text-center">Zuzana Kunckova</h1>
-              <h2 class="lead text-center">Front End Web Developer</h2>
-              <hr>
-            </div>
-          </article>
-        </div>
+@include('partials._header')
       
         <section id="portfolio" class="grid-container">
           <div class="blurb">

@@ -1,5 +1,5 @@
 ---
-extends: _layouts.post
+extends: layouts.post
 title: 'Stop Positive Thinking'
 created_at: 2018-08-19
 abstract: This post is about positive thinking
