@@ -1,14 +1,11 @@
 @include('partials._meta')
     <body>
-        @include('partials._nav')
-
-        @include('partials._header')     
+   
+        @include('partials._horizontal-nav')    
+        <div class="grid-container">
+            @yield('content')  
+        </div>  
         
-        <div class="container">
-            <h2>Blog listing</h2>
-        </div>
- 
-        @yield('content')
     
         @include('partials._footer')
     

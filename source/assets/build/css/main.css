@@ -63,7 +63,7 @@ button.close-button:focus, button.close-button:hover {
   margin: 20px 0;
 }
 
-.off-canvas.position-left a {
+.off-canvas.position-left ul a {
   color: #F7659B;
   text-transform: uppercase;
   font-weight: 700;
@@ -73,11 +73,11 @@ button.close-button:focus, button.close-button:hover {
   padding-bottom: 2px;
 }
 
-.off-canvas.position-left a:before {
+.off-canvas.position-left ul a:before {
   content: "";
   position: absolute;
-  width: 33%;
-  margin-left: 99px;
+  width: 30%;
+  margin-left: 104px;
   height: 2px;
   bottom: 0;
   left: 0;
@@ -89,10 +89,27 @@ button.close-button:focus, button.close-button:hover {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.off-canvas.position-left a:hover:before {
+.off-canvas.position-left ul a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+#social-media {
+  font-size: 12px;
+  margin: 30px auto 0;
+  width: 45%;
+  background-color: #00aced;
+  padding: 2px 0;
+  border-radius: 2px;
+}
+
+#social-media a {
+  color: white;
+}
+
+#social-media:hover {
+  background-color: #1dcaff;
 }
 
 hr {
@@ -136,6 +153,97 @@ hr {
   width: 100%;
 }
 
+/* =============================== ABOUT ME SECTION =========================== */
+#about {
+  padding: 0 2rem;
+}
+
+#about p {
+  line-height: 2;
+}
+
+#about a {
+  text-decoration: underline;
+}
+
+#about strong a {
+  color: black;
+  text-decoration: underline;
+}
+
+blockquote {
+  border-left: none;
+  background-color: #F0F0F0;
+  padding: 10px;
+  margin-left: -10px;
+}
+
+@media screen and (min-width: 710px) {
+  #about {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1171px) {
+  #about {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/* =============================== BLOG PAGE SECTION ========================== */
+#blog {
+  width: 80%;
+  margin: 40px auto 0;
+}
+
+#blog .blog-post {
+  padding: 20px 20px 30px;
+  width: 80%;
+  border-bottom: 1px solid #cacaca;
+}
+
+#blog h1 {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+#blog .blog-post:last-of-type {
+  border-bottom: none;
+}
+
+#blog div .blog-title a {
+  color: #1A1A1A;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#blog div .blog-title h2:before {
+  content: "";
+  display: inline-block;
+  background-image: url(/assets/images/file-text2.svg);
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  margin-right: .25em;
+}
+
+#blog div .blog-title a:hover {
+  color: #F7659B;
+  border-bottom: 2px solid #f7659b;
+}
+
+#blog div .blog-date {
+  font-size: 14px;
+  font-style: italic;
+  color: #818181;
+}
+
 /* =============================== PORTFOLIO SECTION ========================== */
 #portfolio {
   padding: 2rem 1rem;
@@ -147,7 +255,7 @@ hr {
 }
 
 #portfolio div.blurb p {
-  line-height: 1.8;
+  line-height: 2;
 }
 
 .cell {
@@ -279,7 +387,7 @@ img.thumbnail {
     font-family: 'Raleway', sans-serif;
   }
   #portfolio {
-    padding: 2rem;
+    width: 90%;
   }
   #portfolio div.blurb {
     max-width: 70%;
@@ -340,12 +448,18 @@ img.thumbnail {
 
 @media print, screen and (min-width: 64em) {
   #contact {
-    padding: 3rem;
+    padding: 3rem 0;
     font-family: 'Raleway', sans-serif;
+    width: 90%;
   }
 }
 
 /* ==============================FOOTER =========================== */
 footer {
   text-align: center;
+  padding: 40px 0;
+}
+
+footer hr {
+  margin-bottom: 40px;
 }

@@ -10,15 +10,19 @@
         </div>
         <hr>
         <div class="auto cell">
-            <p>Web designer and developer with background in psychology. <br>Skilled in HTML (Pug), CSS (SCSS), JavaScript (ES5/ES6), jQuery, PHP, and the accessibility and PWA principles.<br><br>
-            Recipient of the Google Mobile Web Specialist scholarship 2018.
-            </p>
+
+            @include('content._bio')
+
             <hr>
 
             @include('partials._nav')
 
             <hr>
-        </div>    
+            <div id="social-media">
+                <a href="https://twitter.com/Zk433">Follow me on Twitter</a>
+            </div>
+        </div>   
+       
     </div>
 
  </div>{{-- off-canvas position-left reveal-for-large --}}

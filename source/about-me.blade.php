@@ -4,10 +4,16 @@
 
 @include('partials._header')
 
-    <div class="grid-container">
-        <h2>About me</h2>
-    </div>
-       
-  
+    <main id="main" role="main">
+        <section id="about" class="about">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        @include('content._about')
+                    </div>
+                </div>
+            </div>  
+        </section>
+    </main> 
     
 @endsection
